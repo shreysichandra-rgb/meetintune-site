@@ -7,7 +7,7 @@
   const url=new URL(link.href,location.href);
   if(url.protocol==='https:'&&url.hostname==='wa.me'&&/^\/[1-9]\d{7,14}$/.test(url.pathname)&&url.searchParams.get('text')==='Hi'){
    url.searchParams.set('text','Hi — '+source);link.href=url.href;
-  }else if(url.origin===location.origin&&['/','/how-it-works.html','/pilot/index.html'].includes(url.pathname)){
+  }else if(url.origin===location.origin&&['/','/index.html','/pricing.html','/how-it-works.html','/pilot/index.html'].includes(url.pathname)){
    url.searchParams.set('ad',source);link.href=url.href;
   }
  }
