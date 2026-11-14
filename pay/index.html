@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InTune · Secure payment</title><meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="/pilot/brand/intune-profile.svg"><link rel="stylesheet" href="/site.css"></head>
+<body><main class="doc" style="text-align:center;padding-top:80px"><img src="/pilot/brand/intune-logo.svg" alt="InTune" width="150" height="50">
+<p id="msg">Opening your secure Razorpay checkout…</p></main>
+<script>
+// The private code after # never leaves her phone until the checkout page reads it.
+(function(){var h=location.hash;var m=document.getElementById('msg');
+if(/^#(?:[a-f0-9]{64}|[A-Za-z0-9_-]{22})$/.test(h)){location.replace('https://graceful-ptarmigan-19.convex.site/pay'+h);}
+else{m.textContent='Please open the payment link from your InTune WhatsApp chat.';}})();
+</script></body></html>
